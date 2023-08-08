@@ -2,23 +2,24 @@
 const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
-const RESOURCES = {
-  "version.json": "85bbc5737efbb1c7786b418e268ad7bb",
-"index.html": "40c64b6e3f5305678ce045aa6375f793",
-"/": "40c64b6e3f5305678ce045aa6375f793",
-"main.dart.js": "456272a3d6712669c29cfb0093fc610b",
-"flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
+
+const RESOURCES = {"version.json": "85bbc5737efbb1c7786b418e268ad7bb",
+"index.html": "87d1f3504a7f9562daf8376b9a1e60d3",
+"/": "87d1f3504a7f9562daf8376b9a1e60d3",
+"main.dart.js": "953e25e784cafc42f54ca58ed7e009b9",
+"flutter.js": "6fef97aeca90b426343ba6c5c9dc5d4a",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "d3e8be9819697c196251e6e977053336",
-"assets/AssetManifest.json": "c3e34a5969201b928e4c3ac7befe8b33",
-"assets/NOTICES": "67f2538905ee62ae5108b1d5898498d3",
-"assets/FontManifest.json": "202bfb5144bfc3359dc068bcf44cba82",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
+"assets/AssetManifest.json": "ebda86bb2839f5fb241eadb40f1740b2",
+"assets/NOTICES": "d5c5c68982a46b39263ba6e0e0ea5af1",
+"assets/FontManifest.json": "eacd45f827175c0f3d32e18337eb1b64",
+"assets/shaders/ink_sparkle.frag": "f8b80e740d33eb157090be4e995febdf",
+"assets/AssetManifest.bin": "8c2e0bbf84664585c5566a59ed4f0897",
+"assets/fonts/MaterialIcons-Regular.otf": "729d826ca1739ee9d8a10996ee93911f",
 "assets/assets/music/Mr_Smith-Sunday_Solitude.mp3": "5fb1f2fbf4314eb5df35b62706942698",
 "assets/assets/music/README.md": "035041cfb2070f794172dedb2aa709b6",
 "assets/assets/music/Mr_Smith-Sonorus.mp3": "9353b7bb732002062e2c9107a95f3d2a",
@@ -28,8 +29,23 @@ const RESOURCES = {
 "assets/assets/images/3x/settings.png": "21ff2cc135a762f74ed1a80aac6502bb",
 "assets/assets/images/3x/restart.png": "429270ce832c881b80fbd592e5ff1e0e",
 "assets/assets/images/3x/back.png": "88a977a654df5a490037340f90a5a19e",
+"assets/assets/images/smile_finger_icon.png": "2fd54dec33aa955ca8a8188b192dea86",
+"assets/assets/images/progress.png": "48873c1a8a7889aff8e49a9c6830595a",
+"assets/assets/images/setting_circle_container.png": "ab3ca06d4e6481049a0833d8e69f5ceb",
 "assets/assets/images/settings.png": "840fd7e3337c743046bf992ef18a10b8",
+"assets/assets/images/square_pattern.png": "69c013a0011db4878361fd651ab4ec31",
+"assets/assets/images/star_icon.png": "d4e2bd35b27f1c0b2b4b84f509b4034c",
+"assets/assets/images/soroban.png": "bb9055ed410f18ef8ecf57733beaf72b",
+"assets/assets/images/setting_button.png": "f2347edafa95d3e3166c583c22645df7",
+"assets/assets/images/lefthand_selection_circle.png": "61c91d4ae6d06f083aad178941512c48",
+"assets/assets/images/blue_bubble_button.png": "bb6e345cfaba9ca20a93302cc373b3f5",
+"assets/assets/images/divide_selection.png": "fdb2ea2107ee44c862db590821d016d1",
 "assets/assets/images/restart.png": "d3d2e3f3b2f6cb1e1a69b8b2529096f7",
+"assets/assets/images/fingermath.png": "44a1e3f2f2b427dc13086c0cfa2fceb4",
+"assets/assets/images/red_bubble_button.png": "af4509eea3dc39c4ebec8534cecffb29",
+"assets/assets/images/passwordicon.png": "266a52ac80bc50c34dd1911664de89f2",
+"assets/assets/images/bothhand_selection_circle.png": "143ddf0fecefca55ad9192e14d0c072c",
+"assets/assets/images/usericon.png": "ab1d1c226dd8b7714c087ac1a6bd652d",
 "assets/assets/images/finger_math_lefthand/60.png": "e3597506e32f6064d826bd6deac36450",
 "assets/assets/images/finger_math_lefthand/70.png": "f0a83386cede1bcfa96b7437527688d7",
 "assets/assets/images/finger_math_lefthand/10.png": "5fee9f5af5ad6f44d41cd9b908c16701",
@@ -39,6 +55,15 @@ const RESOURCES = {
 "assets/assets/images/finger_math_lefthand/40.png": "db0ed62999f979ceca850463638fd382",
 "assets/assets/images/finger_math_lefthand/50.png": "0b9ea6946952615eb4fe429121021dbd",
 "assets/assets/images/finger_math_lefthand/90.png": "26918bc1ae41d0229ec98b931e305358",
+"assets/assets/images/soroban_smile_icon.png": "d9c72e66f87dc5c27e0a487d16d0b85b",
+"assets/assets/images/logo.png": "d5702490d2ed97e21505affb631c41ae",
+"assets/assets/images/bg1.png": "0d02b1988bfc30fb79d66170bc3e5300",
+"assets/assets/images/tag_container.png": "57e8d49e8d085876e4741dcebdc5e880",
+"assets/assets/images/righthand_selection_circle.png": "1e31687580542e5888da5a71be00a449",
+"assets/assets/images/soroban_multipledivide_selection.png": "e475bf85e59ae8ba3e68bba2431bfe88",
+"assets/assets/images/soroban_flashcard_selection.png": "bda04bcb583f62ef7b5a156d59fa7715",
+"assets/assets/images/back_button.png": "029960254192701eb0f1b0bb3ce37f70",
+"assets/assets/images/number_keyboard_button.png": "06f5d4db31bae97ca30cc2bef1a445eb",
 "assets/assets/images/finger_math_righthand/8.png": "35b8e84007318a843b641e122002eca2",
 "assets/assets/images/finger_math_righthand/9.png": "7683c89cbc941435e354055acfff9891",
 "assets/assets/images/finger_math_righthand/4.png": "4c25233a530fbe23059f022c3c0b6629",
@@ -49,13 +74,23 @@ const RESOURCES = {
 "assets/assets/images/finger_math_righthand/3.png": "c3bc98539b2614e1d7441f3ec0c01df4",
 "assets/assets/images/finger_math_righthand/1.png": "b6b2d9654674641190a4d5f48f9a1861",
 "assets/assets/images/finger_math_righthand/0.png": "5b72109fe2f114d6a3f998a79ea57851",
+"assets/assets/images/dropdown_icon.png": "9dabd3b033a258c8cf5d641227b4566a",
+"assets/assets/images/green_bubble_button.png": "55d6630a8ea82b78b7469faf6f4ada86",
+"assets/assets/images/grid_bg.png": "a71684931f5d623ac783b8229825e06b",
+"assets/assets/images/orange_bubble_button.png": "415b7f2c7acc930c7745197ad93af697",
+"assets/assets/images/multiple_selection.png": "9d7089192368633bf0336f48d253e256",
 "assets/assets/images/2x/settings.png": "8404e18c68ba99ca0b181bd96ace0376",
 "assets/assets/images/2x/restart.png": "83aea4677055df9b0d8171f5315f2a60",
 "assets/assets/images/2x/back.png": "85cda8f41a13153d6f3fb1c403f272ea",
+"assets/assets/images/hexagon_container.png": "06ff5518ebc5648dab64d8ba26f9c579",
 "assets/assets/images/back.png": "3c82301693d5c4140786184a06c23f7e",
 "assets/assets/images/3.5x/settings.png": "c977a1e6c59e8cfd5cd88a0c973928fc",
 "assets/assets/images/3.5x/restart.png": "583169ac365d9515fc12f29e3b530de0",
 "assets/assets/images/3.5x/back.png": "85db134e26410547037485447f659277",
+"assets/assets/images/selection_container.png": "ff22f98969a8c8e6a46f34d0d8e19be5",
+"assets/assets/images/button.png": "84445a2f1033248e389da547623d97df",
+"assets/assets/images/square_pattern2.png": "8a607590c6bc76468c93d92aab2ee681",
+"assets/assets/images/soroban_plusminus_selection.png": "fb65b810c1da1c1d8d3f012fd8d0962f",
 "assets/assets/sfx/kss1.mp3": "fd0664b62bb9205c1ba6868d2d185897",
 "assets/assets/sfx/spsh1.mp3": "2e1354f39a5988afabb2fdd27cba63e1",
 "assets/assets/sfx/fwfwfwfw1.mp3": "d0f7ee0256d1f0d40d77a1264f23342b",
@@ -86,19 +121,28 @@ const RESOURCES = {
 "assets/assets/sfx/wehee1.mp3": "5a986231104c9f084104e5ee1c564bc4",
 "assets/assets/sfx/goodjob.mp3": "5d92f0ebe36ecebc8fa53989430d0302",
 "assets/assets/sfx/swishswish1.mp3": "219b0f5c2deec2eda0a9e0e941894cb6",
-"canvaskit/canvaskit.js": "97937cb4c2c2073c968525a3e08c86a3",
-"canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
-"canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
-"canvaskit/canvaskit.wasm": "3de12d898ec208a5f31362cc00f09b9e"
-};
-
+"assets/assets/fonts/Baloo-Regular.ttf": "7ea5a2778c1043f5a28f86b10eaa588d",
+"assets/assets/fonts/UTM%2520Avo.ttf": "5b5fcc354ed196046001a2db207984fa",
+"assets/assets/fonts/iCiel-Pacifico.otf": "e369f61a78c093012ca192389d011d6f",
+"assets/assets/fonts/HLT%2520Fall%2520For%2520You.ttf": "5bfa8b09ad3fa5ef494efbf3aca9cf4d",
+"assets/assets/fonts/UTM-Cookies.ttf": "87f7b04f82d7f58da0276e43e2f55ce0",
+"assets/assets/fonts/UTM%2520Aptima.ttf": "8c38c404394cb2df6002064ae7b5ede5",
+"assets/assets/fonts/iCielSoupofJustice.ttf": "ff5ea31e3f72eaeb8ef878e0b4aa6aef",
+"assets/assets/fonts/ARLRDBD.ttf": "200135e8e5aec51916af96b03c1ee8fc",
+"canvaskit/skwasm.js": "1df4d741f441fa1a4d10530ced463ef8",
+"canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
+"canvaskit/chromium/canvaskit.js": "8c8392ce4a4364cbb240aa09b5652e05",
+"canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
+"canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
+"canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
+"canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a"};
 // The application shell files that are downloaded before a service worker can
 // start.
-const CORE = [
-  "main.dart.js",
+const CORE = ["main.dart.js",
 "index.html",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
+
 // During install, the TEMP cache is populated with the application shell files.
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -109,7 +153,6 @@ self.addEventListener("install", (event) => {
     })
   );
 });
-
 // During activate, the cache is populated with the temp files downloaded in
 // install. If this service worker is upgrading from one with a saved
 // MANIFEST, then use this to retain unchanged resource files.
@@ -131,6 +174,8 @@ self.addEventListener("activate", function(event) {
         await caches.delete(TEMP);
         // Save the manifest to make future upgrades efficient.
         await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+        // Claim client to enable caching on first launch
+        self.clients.claim();
         return;
       }
       var oldManifest = await manifest.json();
@@ -156,6 +201,8 @@ self.addEventListener("activate", function(event) {
       await caches.delete(TEMP);
       // Save the manifest to make future upgrades efficient.
       await manifestCache.put('manifest', new Response(JSON.stringify(RESOURCES)));
+      // Claim client to enable caching on first launch
+      self.clients.claim();
       return;
     } catch (err) {
       // On an unhandled exception the state of the cache cannot be guaranteed.
@@ -166,7 +213,6 @@ self.addEventListener("activate", function(event) {
     }
   }());
 });
-
 // The fetch handler redirects requests for RESOURCE files to the service
 // worker cache.
 self.addEventListener("fetch", (event) => {
@@ -206,7 +252,6 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
-
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
@@ -219,7 +264,6 @@ self.addEventListener('message', (event) => {
     return;
   }
 });
-
 // Download offline will check the RESOURCES for all files not in the cache
 // and populate them.
 async function downloadOffline() {
@@ -240,7 +284,6 @@ async function downloadOffline() {
   }
   return contentCache.addAll(resources);
 }
-
 // Attempt to download the resource online before falling back to
 // the offline cache.
 function onlineFirst(event) {

@@ -1,6 +1,6 @@
 {
-    "name": "kiddymath_admin",
-    "short_name": "kiddymath_admin",
+    "name": "game_template",
+    "short_name": "game_template",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
